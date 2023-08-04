@@ -173,13 +173,15 @@ display: none
 
 .arrow-right {
     right: 10px;
+    border: red;
 }
 
 /* Estilo CSS para a imagem principal */
 .main-image {
-    width: 70vw; /* Largura fixa da imagem */
-    height: 55vw; /* Altura ajustada para preservar a proporção */
+    width: 100%; /* Largura fixa da imagem */
+    height: 65vw; /* Altura ajustada para preservar a proporção */
     max-width: 100%;
+    align-items: center;
 }
 * {
     font-family: 'Arimo', sans-serif;
@@ -199,11 +201,11 @@ display: none
 .conteudosorteio{
   background-color: #f1ecec;
   color:#000000;
-  font-size:13px;
-  letter-spacing: 0px;
+  font-size:14px;
+  letter-spacing: 0,5px;
   text-align: justify;
-  border: 3px solid #1a2a39;
-
+  border: 6px solid #1a2a39;
+  padding: 0px 22px;
 
 }
 
