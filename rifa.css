@@ -17,7 +17,7 @@ body {
   height: 100vh;
   border: 20px;
   text-align: center;
-  background-image: linear-gradient(to right, rgb(0, 0, 230), rgb(248, 248, 248));
+  background-image: linear-gradient(to right, rgb(0, 0, 230), rgb(30, 50, 163));
 }
 
 #container {
@@ -32,11 +32,11 @@ body {
 }
 
 .cabecalho,.cabecalho_menu {
-  background-color: rgb(0, 0, 139);
+  background-color: #1a2a39;
   height: 50px;
   display: flex;
   justify-content: center;
-  border: 2px solid #fefefe;
+  border: 2px solid #000000;
   writing-mode: horizontal-tb;
 }
 
@@ -189,6 +189,7 @@ display: none
   font-size:13px;
   letter-spacing: 0px;
   text-align: justify;
+  border: 3px solid #1a2a39;
 
 
 }
