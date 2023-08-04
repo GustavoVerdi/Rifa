@@ -182,4 +182,40 @@ display: none
   border-radius: 5px;
 
 }
+
+.conteudosorteio{
+  background-color: #f1ecec;
+  color:#000000;
+  font-size:13px;
+  letter-spacing: 0px;
+  text-align: justify;
+
+
+}
+
+#aumentarquantidade,#diminuirQuantidade,#mais{
+  background-color: #1d9d34;
+  color: rgb(248, 244, 244);
+  border: none;
+  padding: 4px 22px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#quantidade{
+  font-size: 16px;
+  padding: 5px;
+  margin: 4px 2px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
   @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
