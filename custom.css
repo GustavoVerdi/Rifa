@@ -1,27 +1,4 @@
-
-@media only screen and (min-width: 960px) {
-    /* styles for browsers larger than 960px; */
-}
-@media only screen and (min-width: 1440px) {
-    /* styles for browsers larger than 1440px; */
-}
-@media only screen and (min-width: 2000px) {
-    /* for sumo sized (mac) screens */
-}
-@media only screen and (max-device-width: 480px) {
-   /* styles for mobile browsers smaller than 480px; (iPhone) */
-}
-@media only screen and (device-width: 768px) {
-   /* default iPad screens */
-}
-/* different techniques for iPad screening */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-  /* For portrait layouts only */
-}
-
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-  /* For landscape layouts only */
-}
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 
 body {
   align-items: center;
@@ -30,7 +7,7 @@ body {
   height: 100vh;
   border: 20px;
   text-align: center;
-  background-image: linear-gradient(to right, rgb(0, 0, 230), rgb(30, 50, 163));
+  background-image: linear-gradient(to right, rgb(22,22,22), rgb(22,22,22));
 }
 
 #container {
@@ -39,17 +16,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #000000;
+  border: 2px solid #faf6f6;
   padding: 30px;
-  background-color: #1a2a39;
+  background-color: rgb(45 45 45);
 }
 
 .cabecalho,.cabecalho_menu {
-  background-color: #1a2a39;
-  height: 50px;
+  border-block: 3px solid #ffffff;
+  background-color: rgb(68 68 68);
+  height: 45px;
   display: flex;
   justify-content: center;
-  border: 2px solid #000000;
   writing-mode: horizontal-tb;
 }
 
@@ -60,7 +37,17 @@ body {
   display: flex;
   color: #a39292;
 }
-
+#valorUnitarioContainer {
+  background-color: #1d9d34;
+  color: rgb(248, 244, 244);
+  border: none;
+  padding: 11px 13px;
+  text-align: center;
+  font-size: 15px;
+  margin: 3px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
 .cabecalho_menu_item {
   margin: 0 10px;
   border: #e4e6e8;
@@ -98,7 +85,26 @@ a:hover {
   cursor: pointer;
   border-radius: 5px;
 }
+#maisop{
+  background-color: transparent;
+  border-color:2px #e4e6e8;
+  border: 1px solid white;
+  padding: -1px;
+  width: 100%;
+}
+#mais{
+background-color: #1d9d34;
+color: white;
+width: 80px;
+height: 35px;
+margin: 5px;
+border: 1px solid white;
+padding: 5px;
+width: 35%;
+border-radius: 5px;
+  
 
+}
 label {
   font-weight: bold;
   margin-right: 10px;
@@ -151,7 +157,7 @@ display: none
   cursor: pointer;
 }
 #galleryContainer {
-    display: flex;
+
     align-items: center;
     max-width: 100%;
     position: relative; 
@@ -178,9 +184,9 @@ display: none
 
 /* Estilo CSS para a imagem principal */
 .main-image {
-    width: 100%; /* Largura fixa da imagem */
-    height: 65vw; /* Altura ajustada para preservar a proporção */
-    max-width: 100%;
+    width: 45vw; /* Largura fixa da imagem */
+    height: 35vw; /* Altura ajustada para preservar a proporção */
+    /*max-width: 100%; */
     align-items: center;
 }
 * {
@@ -205,15 +211,15 @@ display: none
   letter-spacing: 0,5px;
   text-align: justify;
   border: 6px solid #1a2a39;
-  padding: 0px 22px;
+  padding: 0px 5px;
 
 }
 
-#aumentarquantidade,#diminuirQuantidade,#mais{
+#aumentarquantidade,#diminuirQuantidade{
   background-color: #1d9d34;
   color: rgb(248, 244, 244);
   border: none;
-  padding: 4px 22px;
+  padding: 4px 25px;
   text-align: left;
   text-decoration: none;
   display: inline-block;
@@ -224,8 +230,9 @@ display: none
 }
 
 #quantidade{
+  color: black;
   font-size: 16px;
-  padding: 5px;
+  padding: 4px 22px;
   margin: 4px 2px;
   border: none;
   cursor: pointer;
@@ -234,4 +241,3 @@ display: none
   display: inline-block;
   border-radius: 5px;
 }
-  @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');

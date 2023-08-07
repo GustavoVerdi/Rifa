@@ -12,22 +12,20 @@
         }
         var quantidade = 1; // Inicializa a quantidade com 1 (pode ajustar conforme desejar)
 
-      // Função para aumentar a quantidade
-      function aumentarQuantidade(aumentarquantidade) {
-          var inputQuantity = document.getElementById("quantidade");
-          quantidade = parseInt(inputQuantity.value);
-          if (quantidade < 100) { // Limite máximo de 100 (pode ajustar conforme desejar)
-              inputQuantity.value = quantidade + 1;
-          }
-      }
-        // Função para diminuir a quantidade
-        function diminuirQuantidade() {
+        function atualizarQuantidade(quantidadeAdicional) {
             var inputQuantidade = document.getElementById("quantidade");
-            quantidade = parseInt(inputQuantidade.value);
-            if (quantidade > 1) { // Impede que a quantidade fique menor que 1
-                inputQuantidade.value = quantidade - 1;
+            var novaQuantidade = parseInt(inputQuantidade.value) + quantidadeAdicional;
+        
+            if (novaQuantidade < 1) {
+                novaQuantidade = 1;
+            } else if (novaQuantidade > 1000) { //NÚMERO TOTAL DE NÚMEROS
+                novaQuantidade = 1000;   //NÚMERO TOTAL DE NÚMEROS TEM QUER SER O MESMO QUE O DE CIMA
             }
-      }
+        
+            inputQuantidade.value = novaQuantidade;
+            calcularValorTotal("quantidade", "valorUnitario");
+        }
+        
      
       // Função para abrir a subtela
        function abrirSubtela() {
@@ -75,3 +73,24 @@
           } else {
             telefoneInput.setCustomValidity("");
        }
+
+       function verificarNumero() {
+        var numero = document.getElementById("numero").value;
+        
+        // Simulação: Verificar se o número já está cadastrado
+        var numeroCadastrado = false; // Troque para 'false' se o número não estiver cadastrado
+      
+        var nomeInput = document.getElementById("nome");
+        var emailInput = document.getElementById("email");
+      
+        if (numeroCadastrado) {
+          nomeInput.disabled = false;
+          emailInput.disabled = false;
+        } else {
+          nomeInput.value = "";
+          emailInput.value = "";
+          nomeInput.disabled = true;
+          emailInput.disabled = true;
+        }
+      }
+      
