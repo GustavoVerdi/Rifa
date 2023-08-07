@@ -9,7 +9,12 @@ body {
   text-align: center;
   background-image: linear-gradient(to right, rgb(22,22,22), rgb(22,22,22));
 }
-
+#formlogin {
+  padding: 300px;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+}
 #container {
   display: inline-block;
   color: #f6f6f6;
