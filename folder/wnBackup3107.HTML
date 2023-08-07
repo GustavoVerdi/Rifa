@@ -31,9 +31,13 @@
                 <img src="imagem1.jpg" alt="Imagem 1" class="main-image" id="mainImage" onclick="openModal('imagem1.jpg')">
                 <div class="arrow arrow-right" onclick="showNextImage()">&#8250;</div>        
         <div id="quantityContainer">
-        <label for="quantidade" id="quantityLabel">Cotas:</label>
-        <input type="number" id="quantidade" name="quantidade" value="1" oninput="calcularValorTotal('quantidade', 'valorUnitario')">
+            <br>
+            <div id="valorUnitarioContainer">
+            <label for="valorUnitario" id="valorUnitarioLabel">VALOR DA COTA: R$<span id="valorUnitario">0.49</span></label>
+            </div> <br>
+        <label for="quantidade" id="quantityLabel">COTAS:</label> <br>
         <button oninput="aumentarQuantidade('aumentarquantidade')"id="aumentarquantidade">+</button>
+        <input type="number" id="quantidade" name="quantidade" value="1" oninput="calcularValorTotal('quantidade', 'valorUnitario')">
         <button oninput="diminuirQuantidade('diminuirQuantidade')" id="diminuirQuantidade">-</button><br>
         
     </div>
@@ -44,10 +48,6 @@
         <button id="mais">+100</button>
         </div>
         <br>
-        <div id="valorUnitarioContainer">
-        <label for="valorUnitario" id="valorUnitarioLabel">Valor da Cota:</label>
-        <span id="valorUnitario">0.49</span>
-    <br>
         <div>
             <!-- Elemento HTML para exibir a mensagem de erro -->
             <p id="mensagemErro" style="color: red; font-weight: bold;"></p>
@@ -56,8 +56,7 @@
             <div id="numerosGerados"></div>
         </div>
         <div>
-            <label>Valor Total:</label>
-            <div id="valorTotal">R$0.49</div>
+            <label>Valor Total: R$<span id="valorTotal">R$0.49</span></label>
         </div>
         <div>  
              <button id="botao-pagamento" onclick="abrirSubtela()">Efetuar Compra</button>

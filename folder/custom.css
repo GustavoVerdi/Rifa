@@ -1,6 +1,9 @@
 *{
-  color:rgb(228 228 228)
+  color:rgb(228 228 228);
+
+  
 }
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 
 body {
   align-items: center;
@@ -18,9 +21,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #000000;
+  border: 2px solid #faf6f6;
   padding: 30px;
-  background-color: rgb(28 28 28);
+  background-color: rgb(45 45 45);
 }
 
 .cabecalho,.cabecalho_menu {
@@ -28,7 +31,7 @@ body {
   height: 50px;
   display: flex;
   justify-content: center;
-  border: 2px solid #000000;
+  border: 2px solid #f6f6f6;
   writing-mode: horizontal-tb;
 }
 
@@ -39,7 +42,17 @@ body {
   display: flex;
   color: #a39292;
 }
-
+#valorUnitarioContainer {
+  background-color: #1d9d34;
+  color: rgb(248, 244, 244);
+  border: none;
+  padding: 11px 13px;
+  text-align: center;
+  font-size: 15px;
+  margin: 3px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
 .cabecalho_menu_item {
   margin: 0 10px;
   border: #e4e6e8;
@@ -213,4 +226,3 @@ display: none
   display: inline-block;
   border-radius: 5px;
 }
-  @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
