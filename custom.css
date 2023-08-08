@@ -34,7 +34,7 @@ body {
   height: 100vh;
   border: 20px;
   text-align: center;
-  background-image: #f1f1f1;
+  background-color: #f1f1f1;
 }
 #formlogin {
   padding: 300px;
@@ -45,8 +45,10 @@ body {
   height: 300px;
   display: inline-block;
 }
+#containerlogin{
+ background-color: #f1f1f1;
+}
 #painellogin {
-  background-color: (45 45 45);
   width: 200PX;
   height: 110px;
   color: rgb(247, 246, 246);
@@ -65,17 +67,18 @@ body {
   display: inline-block;
   color: #050505;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border: 2px solid #1d9d34;
-  padding: 50px;
+  padding: 35px;
   background-color: #e4e4e4;
   border-radius: 12px;
+  align-items: center;
+  object-fit: cover;
+
 }
 
 .cabecalho,.cabecalho_menu {
-  border-block: 3px solid #ffffff;
-  background-color: rgb(68 68 68);
+  border: 4px inherit black;
+  background-color: rgb(45 45 45);;
   height: 45px;
   display: flex;
   justify-content: center;
@@ -216,6 +219,7 @@ display: none
   letter-spacing: 2px;
   margin: 4px 2px;
   cursor: pointer;
+  display: inline-block;
 }
 #galleryContainer {
     align-items: center;
@@ -290,7 +294,7 @@ display: none
   text-align: left;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 19px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 6px;
@@ -299,10 +303,9 @@ display: none
 #quantidade{
   color: black;
   font-size: 16px;
-  padding: 4px 22px;
-  margin: 4px 2px;
+  padding: 4px 2px;
+  margin: 1px 1px;
   border: none;
-  cursor: pointer;
   text-align: center;
   text-decoration: none;
   display: inline-block;

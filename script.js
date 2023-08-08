@@ -1,6 +1,7 @@
    function calcularValorTotal(idQuantidade, idValorUnitario) {
           var inputQuantidade = document.getElementById(idQuantidade);
           var quantidade = parseInt(inputQuantidade.value);
+      
 
           var spanValorUnitario = document.getElementById(idValorUnitario);
           var valorUnitario = parseFloat(spanValorUnitario.innerText);

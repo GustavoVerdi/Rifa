@@ -16,17 +16,17 @@
     <nav class="cabecalho_menu">
             <ul class="ulcabecalho">
                 <li><a class="cabecalho_menu_item" href="">Início</a></li>
-                <li><a class="cabecalho_menu_item" href="">Sorteios</a></li>
+                <li><a class="cabecalho_menu_item" href="">Sort</a></li>
                 <li><a class="cabecalho_menu_item" href="">Suporte</a></li>
               </ul>
-        </nav>
+        </nav> 
         </div>
         <br>
         <div id="container">
-            <fieldset id="Tituloprincipal">
-            <span id="Tituloprincipal">10 MIL NÚMEROS - PAINEL LIVRE ESCOLHA </span>
+            <div id="barra-acoes">
+           <fieldset >
+            <span id="Tituloprincipal">10  - PAINEL LIVRE ESCOLHA </span>
         </fieldset>
-                <div id="barra-acoes">
             <br>
             <div id="galleryContainer">
                 <div class="arrow arrow-left" onclick="showPrevImage()">&#8249;</div>
@@ -35,11 +35,11 @@
         <div id="quantityContainer">
             <br>
             <div id="valorUnitarioContainer">
-            <label for="valorUnitario" id="valorUnitarioLabel" min="1" max="100">VALOR DA COTA R$ <span id="valorUnitario">0.49 !!!</span></label>
+            <label for="valorUnitario" id="valorUnitarioLabel" min="1" max="100">VALOR DA COTA R$ <span id="valorUnitario">0.49</span></label>
             </div><br>
-        <label for="quantidade" id="quantityLabel">Quantidade de Cotas:</label> <br>
+        <label for="quantidade" id="quantityLabel">COTAS:</label> <br>
         <button onclick="atualizarQuantidade(-1)" id="diminuirQuantidade">-</button>
-        <input type="text" id="quantidade" name="quantidade" value="1" min="1" max="1000" oninput="calcularValorTotal('quantidade', 'valorUnitario')">
+        <input type="numb" id="quantidade" name="quantidade" value="1" min="1" max="1000" oninput="calcularValorTotal('quantidade', 'valorUnitario')">
         <button onclick="atualizarQuantidade(1)" id="aumentarquantidade">+</button> 
         <br>
         <!--<button oninput="diminuirQuantidade('diminuirQuantidade')" id="diminuirQuantidade">-</button>
