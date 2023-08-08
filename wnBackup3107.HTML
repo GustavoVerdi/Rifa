@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+ 
+
+   <title>TESTE WORK</title>
+   <link rel="stylesheet" type="text/css" href="custom.css">
+   <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header>          
+    </header>
+    <nav class="cabecalho_menu">
+            <ul class="ulcabecalho">
+                <li><a class="cabecalho_menu_item" href="">Início</a></li>
+                <li><a class="cabecalho_menu_item" href="">Sorteios</a></li>
+                <li><a class="cabecalho_menu_item" href="">Suporte</a></li>
+              </ul>
+        </nav>
+        </div>
+        <br>
+        <div id="container">
+            <fieldset id="Tituloprincipal">
+            <span id="Tituloprincipal">10 MIL NÚMEROS - PAINEL LIVRE ESCOLHA </span>
+        </fieldset>
+                <div id="barra-acoes">
+            <br>
+            <div id="galleryContainer">
+                <div class="arrow arrow-left" onclick="showPrevImage()">&#8249;</div>
+                <img src="imagem1.jpg" alt="Imagem 1" class="main-image" id="mainImage" onclick="openModal('imagem1.jpg')">
+                <div class="arrow arrow-right" onclick="showNextImage()">&#8250;</div>        
+        <div id="quantityContainer">
+            <br>
+            <div id="valorUnitarioContainer">
+            <label for="valorUnitario" id="valorUnitarioLabel" min="1" max="100">VALOR DA COTA R$ <span id="valorUnitario">0.49 !!!</span></label>
+            </div><br>
+        <label for="quantidade" id="quantityLabel">Quantidade de Cotas:</label> <br>
+        <button onclick="atualizarQuantidade(-1)" id="diminuirQuantidade">-</button>
+        <input type="text" id="quantidade" name="quantidade" value="1" min="1" max="1000" oninput="calcularValorTotal('quantidade', 'valorUnitario')">
+        <button onclick="atualizarQuantidade(1)" id="aumentarquantidade">+</button> 
+        <br>
+        <!--<button oninput="diminuirQuantidade('diminuirQuantidade')" id="diminuirQuantidade">-</button>
+        <input type="number" id="quantidade" name="quantidade" value="1" oninput="calcularValorTotal('quantidade', 'valorUnitario')">
+        <button oninput="aumentarQuantidade('aumentarquantidade')"id="aumentarquantidade">+</button><br> -->
+    </form>
+    <div id="maisop">
+        <button id="mais" onclick="atualizarQuantidade(10)">+10</button>
+        <button id="mais" onclick="atualizarQuantidade(25)">+25</button>
+        <button id="mais" onclick="atualizarQuantidade(50)">+50</button>
+        <button id="mais" onclick="atualizarQuantidade(100)">+100</button>
+        <button id="mais" onclick="atualizarQuantidade(250)">+250</button>
+        <button id="mais" onclick="atualizarQuantidade(500)">+500</button>
+    </div>
+        <br>
+        <div>
+            <!-- Elemento HTML para exibir a mensagem de erro -->
+            <p id="mensagemErro" style="color: red; font-weight: bold;"></p>
+        </div>
+        <div>
+        <div id="valortotaldiv">
+            <label>Valor Total R$<span id="valorTotal">0.49</span></label>
+        </div>
+        <div>  
+             <button id="botao-pagamento" onclick="abrirSubtela()">Realizar Compra</button>
+        </div>	
+        <div>
+            <button id="botao-consulta" onclick="AbrirSubtelaConsulta()">Consultar Meus Números</button>
+        </div>
+      <div class="subtela" id="subtela">
+		<div class="subtela-conteudo">
+			<form action="rifa.php" method="POST">
+                <fieldset>
+                <br>   
+                <div>
+                    <label for="numero">Número:</label>
+                    <input oninput="verificarNumero()" type="text" id="numero" name="numero">
+                </div>
+                
+            <input type="submit" name="submit" id="subtmit" value="Continuar">
+            <br><br>
+			<button onclick="fecharSubtela()">Fechar</button>
+		</div>
+    </div>
+    <div class="subtelaconsulta" id="subtelaconsulta">
+		<div class="subtela-conteudoconsulta">
+			<form action="consulta.php" method="POST"text>
+                <fieldset>
+                <br>   
+                <div >
+                    <label for="telefoneConsulta">Número de Telefone:</label>
+                    <br>
+                    <input type="tel" id="telefoneConsulta" name="telefoneConsulta" class="inputUser" required>
+                </div>    
+                <br>
+            <input type="submit" name="submit" id="subtmitConsulta" value="Consultar Números">
+            <br><br>
+            <button id="botao-fechar-consulta" onclick="fecharSubtelaconsulta()">Fechar</button>
+        </div>
+    </div>
+</body>
+</html>

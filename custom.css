@@ -1,4 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+}
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+}
+@media only screen and (min-width: 2000px) {
+  /* for sumo sized (mac) screens */
+}
+@media only screen and (max-device-width: 480px) {
+ /* styles for mobile browsers smaller than 480px; (iPhone) */
+}
+@media only screen and (device-width: 768px) {
+ /* default iPad screens */
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+/* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+/* For landscape layouts only */
+}
+
+#tituloprincipal{
+  size: px;
+}
 
 body {
   align-items: center;
@@ -7,23 +34,43 @@ body {
   height: 100vh;
   border: 20px;
   text-align: center;
-  background-image: linear-gradient(to right, rgb(22,22,22), rgb(22,22,22));
+  background-image: #f1f1f1;
 }
 #formlogin {
   padding: 300px;
   justify-content: center;
   align-items: center;
+  color: rgb(5, 4, 4);
+  width: 300px;
+  height: 300px;
   display: inline-block;
+}
+#painellogin {
+  background-color: (45 45 45);
+  width: 200PX;
+  height: 110px;
+  color: rgb(247, 246, 246);
+  background-color: rgb(45 45 45);
+  padding: 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 2px solid black;
+}
+#passw, #namelogin{
+  size:20px;
+  font-size: 16px;
+  color: #000000;
 }
 #container {
   display: inline-block;
-  color: #f6f6f6;
+  color: #050505;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #faf6f6;
-  padding: 30px;
-  background-color: rgb(45 45 45);
+  border: 2px solid #1d9d34;
+  padding: 50px;
+  background-color: #e4e4e4;
+  border-radius: 12px;
 }
 
 .cabecalho,.cabecalho_menu {
@@ -45,13 +92,13 @@ body {
 #valorUnitarioContainer {
   background-color: #1d9d34;
   color: rgb(248, 244, 244);
-  border: none;
+  border-radius: 6px;
   padding: 11px 13px;
   text-align: center;
-  font-size: 15px;
+  font-size: 22px;
   margin: 3px 2px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px solid #d80c0c;
 }
 .cabecalho_menu_item {
   margin: 0 10px;
@@ -75,6 +122,7 @@ a:hover {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 10px;
+  font-size: 28px;
 }
 
 #botao-pagamento , #botao-consulta {
@@ -88,25 +136,25 @@ a:hover {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 #maisop{
-  background-color: transparent;
-  border-color:2px #e4e6e8;
-  border: 1px solid white;
-  padding: -1px;
+  background-color: #fff;
+  border: 2px solid #1d9d34;;
+  border-radius: 12px;
+  padding: 1px;
   width: 100%;
 }
 #mais{
 background-color: #1d9d34;
 color: white;
-width: 80px;
-height: 35px;
+width: 110px;
+height: 45px;
 margin: 5px;
 border: 1px solid white;
 padding: 5px;
-width: 35%;
-border-radius: 5px;
+width: 44%;
+border-radius: 6px;
   
 
 }
@@ -125,6 +173,14 @@ display: none
 
 #valorTotal {
   font-weight: bold;
+  font-size: 28px;
+}
+#valortotaldiv {
+  background-color: #fff;
+  border: 2px solid #1d9d34;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 5px;
 }
 
 .subtela, .subtelaconsulta {
@@ -142,12 +198,12 @@ display: none
 .inputuser,.subtela-conteudoconsulta {
   position: absolute;
   color: #edeef0;
-  top: 50%;
-  left: 50%;
+  top: 25%;
+  left: 25%;
   transform: translate(-50%, -50%);
-  background-color: #1a2a39;
+  background-color:rgb(45 45 45);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 6px;
   box-shadow: 0 0 10px rgb(255, 255, 255);
   max-width: 80%;
   max-height: 80%;
@@ -156,27 +212,28 @@ display: none
   border: none;
   border-bottom: 1px solid white;
   outline: none;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 2px;
   margin: 4px 2px;
   cursor: pointer;
 }
 #galleryContainer {
-
     align-items: center;
     max-width: 100%;
     position: relative; 
 }
 
 .arrow {
-    font-size: 50px;
+    font-size: 70px;
     cursor: pointer;
     padding: 10px;
     color: white;
     border-radius: 50%;
-    position: absolute;
+    display:inline-table;  
     top: 50%;
     transform: translateY(-50%);
+    align-items: start;
+
 }
 .arrow-left {
     left: 10px;
@@ -184,19 +241,21 @@ display: none
 
 .arrow-right {
     right: 10px;
-    border: red;
 }
 
 /* Estilo CSS para a imagem principal */
 .main-image {
-    width: 45vw; /* Largura fixa da imagem */
+    width: 60vw; /* Largura fixa da imagem */
     height: 35vw; /* Altura ajustada para preservar a proporção */
     /*max-width: 100%; */
     align-items: center;
+    object-fit: cover;
+    border-radius: 12px;
 }
 * {
     font-family: 'Arimo', sans-serif;
 }
+
 
 #subtmit,
 #subtmitConsulta{
@@ -205,7 +264,10 @@ display: none
   border: #000000;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
+  size: 16px;
+  height: 40px;
+  display: inline-block;
 
 }
 
@@ -223,15 +285,15 @@ display: none
 #aumentarquantidade,#diminuirQuantidade{
   background-color: #1d9d34;
   color: rgb(248, 244, 244);
-  border: none;
-  padding: 4px 25px;
+  border: 1px solid white;
+  padding: 4px 35px;
   text-align: left;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 #quantidade{
@@ -244,5 +306,5 @@ display: none
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 6px;
 }
