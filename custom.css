@@ -30,9 +30,8 @@
 body {
   align-items: center;
   margin: 0px;
-  width: 100vw;
-  height: 100vh;
-  border: 20px;
+
+  border: 10px;
   text-align: center;
   background-color: #f1f1f1;
 }
@@ -73,7 +72,6 @@ body {
   border-radius: 12px;
   align-items: center;
   object-fit: cover;
-
 }
 
 .cabecalho,.cabecalho_menu {
@@ -123,7 +121,8 @@ a:hover {
 #barra-acoes {
   display: inline-block;
   justify-content: space-between;
-  width: 100%;
+  width: 350px;
+  height: 60vw;
   margin-bottom: 10px;
   font-size: 28px;
 }
@@ -247,11 +246,12 @@ display: none
 
 /* Estilo CSS para a imagem principal */
 .main-image {
-    width: 60vw; /* Largura fixa da imagem */
+    width: 55vw; /* Largura fixa da imagem */
     height: 35vw; /* Altura ajustada para preservar a proporção */
-    /*max-width: 100%; */
+    max-width: 100%;
     align-items: center;
     object-fit: cover;
+    display: inline;
     border-radius: 12px;
 }
 * {
@@ -292,7 +292,7 @@ display: none
   text-align: left;
   text-decoration: none;
   display: inline-block;
-  font-size: 19px;
+  font-size: 17px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 6px;
