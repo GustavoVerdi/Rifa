@@ -75,9 +75,9 @@ body {
 }
 
 .cabecalho,.cabecalho_menu {
-  border: 4px inherit black;
-  background-color: rgb(45 45 45);;
-  height: 45px;
+  border: 1px inherit black;
+  background-color: rgb(255, 255, 255);;
+  height: 49px;
   display: flex;
   justify-content: center;
   writing-mode: horizontal-tb;
@@ -102,26 +102,27 @@ body {
   border-radius: 6px solid #d80c0c;
 }
 .cabecalho_menu_item {
-  margin: 0 10px;
+  margin: 2 10px;
   border: #e4e6e8;
 }
 
 a,
 li {
   display: block;
-  color: #ffffff;
+  color: #060404;
   text-decoration: none;
-  padding: 10px;
+  padding: 9px;
 }
 
 a:hover {
-  background-color: #2f2e2e;
+  background-color:#e4e4e4;
+  border-radius: 12px;
 }
 
 #barra-acoes {
   display: inline-block;
   justify-content: space-between;
-  width: 400px;
+  width: 465px;
   height: 60vw;
   margin-bottom: 10px;
   font-size: 28px;
