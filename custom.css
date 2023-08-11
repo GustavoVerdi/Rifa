@@ -66,10 +66,10 @@ body {
   display: inline-block;
   color: #050505;
   flex-direction: column;
-  border: 2px solid #1d9d34;
+  border: 1px solid #1d9d34;
   padding: 35px;
-  background-color:#f1f1f1;
-  border-radius: 12px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 10px;
   align-items: center;
   object-fit: cover;
 }
