@@ -228,8 +228,6 @@ display: none
 .arrow {
     font-size: 70px;
     cursor: pointer;
-    padding: 10px;
-    color: white;
     border-radius: 50%;
     display:inline-table;  
     top: 50%;
