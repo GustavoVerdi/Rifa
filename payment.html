@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout com Pix</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    
+    <form id="checkout-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" name="valor" required><br><br>
+        
+        <button type="button" onclick="realizarCheckout()">Finalizar Compra</button>
+    </form>
+    
+    <div id="pix-instrucoes" style="display: none;">
+        <h2>Instruções de Pagamento via Pix</h2>
+        <p>Use a câmera do seu aplicativo bancário para escanear o QR Code abaixo:</p>
+        <img id="qr-code" src="" alt="QR Code Pix">
+        <p>Após efetuar o pagamento, clique no botão abaixo para confirmar:</p>
+        <button type="button" onclick="confirmarPagamento()">Confirmar Pagamento</button>
+    </div>
+    
+    <div id="pagamento-confirmado" style="display: none;">
+        <h2>Pagamento Confirmado</h2>
+        <p>O pagamento via Pix foi confirmado com sucesso!</p>
+    </div>
+    
+    <script>
+        function realizarCheckout() {
+            var nome = document.getElementById('nome').value;
+            var valor = document.getElementById('valor').value;
+            
+            // Simular geração do QR Code Pix
+            var qrCodeUrl = "URL_DO_QR_CODE_PIX_COM_DADOS_DE_PAGAMENTO";
+            
+            document.getElementById('qr-code').src = qrCodeUrl;
+            document.getElementById('pix-instrucoes').style.display = 'block';
+        }
+        
+        function confirmarPagamento() {
+            // Aqui você faria a lógica de confirmação do pagamento via Pix
+            // Pode envolver comunicação com um servidor ou integração com um sistema de pagamento
+            // Por enquanto, vamos apenas exibir uma mensagem de sucesso
+            document.getElementById('pix-instrucoes').style.display = 'none';
+            document.getElementById('pagamento-confirmado').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
