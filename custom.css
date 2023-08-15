@@ -66,6 +66,7 @@ body {
 }
 
 .cabecalho,.cabecalho_menu {
+  width: 100%;
   border: 1px inherit black;
   background-color: rgb(255, 255, 255);;
   height: 49px;
