@@ -54,7 +54,7 @@
 
     // Function Galeria fotos
     var currentImageIndex = 0;
-        var images = ['imagem1.jpg', 'imagem2.jpg', 'imagem3.jpg','']; // Substitua com os URLs ou caminhos das suas imagens
+        var images = ['imagem1.jpg', 'imagem2.jpg', 'imagem3.jpg',]; // Substitua com os URLs ou caminhos das suas imagens
 
         function showNextImage() {
             currentImageIndex = (currentImageIndex + 1) % images.length;

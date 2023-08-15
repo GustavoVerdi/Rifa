@@ -5,11 +5,11 @@
 }
 @media (min-width:600px){
 		/*tablets*/
-	article{width:50%;}
+	article{width:75%;}
 }
 @media (min-width:900px){
 		/*monitores*/
-	article{width:25%;}
+	article{width:50%;}
 }
 #pix-instrucoes {
   display: none;
@@ -64,8 +64,7 @@ body {
   align-items: center;
   object-fit: cover;
 }
-
-.cabecalho,.cabecalho_menu {
+.cabecalho_menu {
   width: 100%;
   border: 1px inherit black;
   background-color: rgb(255, 255, 255);;
@@ -94,7 +93,7 @@ body {
   border-radius: 6px solid #d80c0c;
 }
 .cabecalho_menu_item {
-  margin: 2 10px;
+  margin: 2 2px;
   border: #e4e6e8;
 }
 
@@ -237,13 +236,14 @@ display: none
 
 /* Estilo CSS para a imagem principal */
 .main-image {
-    width: 55vw; /* Largura fixa da imagem */
-    height: 35vw; /* Altura ajustada para preservar a proporção */
-    max-width: 100%;
+    width: 82%; /* Largura fixa da imagem */
+    height: 50%; /* Altura ajustada para preservar a proporção */
+    max-width: 500px;
+    max-height: 250px;
     align-items: center;
     object-fit: cover;
     display: inline;
-    border-radius: 12px;
+    border-radius: 6px;
 }
 * {
     font-family: 'Arimo', sans-serif;
