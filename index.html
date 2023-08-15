@@ -98,11 +98,20 @@
                 <div>
                     <label for="numero">Informe seu Telefone:</label><br>
                     <input oninput="verificarNumero()" type="text" id="numero" name="numero">
+                    <button type="button" onclick="realizarCheckout()">Finalizar Compra</button>
                 </div>   
             <input type="submit" name="submit" id="subtmit" value="Continuar">
+
+            <div id="pix-instrucoes" style="display: none;">
+                <h2>Instruções de Pagamento via Pix</h2>
+                <p>Use a câmera do seu aplicativo bancário para escanear o QR Code abaixo:</p>
+                <img src="qrcode.jpg" id="qr-code" alt="QR Code Pix"  onclick="openModal('qrcode.jpg')">
+                <p>Após efetuar o pagamento, clique no botão abaixo para confirmar:</p>
+                <button type="button" onclick="confirmarPagamento()">Confirmar Pagamento</button>
+            </div>
             <br><br>
 			<button onclick="fecharSubtela()">Fechar</button>
-            
+
 		</div>
     </div>
 </div>
