@@ -105,4 +105,9 @@
           document.getElementById('qr-code').src = qrCodeUrl;
           document.getElementById('pix-instrucoes').style.display = 'block';
       }
+      const backdrop = document.getElementById("backdrop");
+
+backdrop.addEventListener("click", (event) => {
+	closeModal();
+});
       

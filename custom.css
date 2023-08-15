@@ -3,7 +3,7 @@
 	/*celulares*/
 	article{width:100%;}
 }
-@media (min-width:600px){
+@media (min-width:400px){
 		/*tablets*/
 	article{width:75%;}
 }
