@@ -63,6 +63,7 @@ body {
   border-radius: 10px;
   align-items: center;
   object-fit: cover;
+  overflow:scroll; 
 }
 .cabecalho_menu {
   width: 100%;
