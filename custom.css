@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 @media (min-width:0px){
 	/*celulares*/
-	article{width:100%;}
+	article{width:50%;}
 }
 @media (min-width:400px){
 		/*tablets*/
-	article{width:75%;}
+	article{width:25%;}
 }
 @media (min-width:900px){
 		/*monitores*/
-	article{width:50%;}
+	article{width:0%;}
 }
 #pix-instrucoes {
   display: none;
