@@ -298,8 +298,16 @@ display: none
   text-decoration: none;
   display: inline-block;
   border-radius: 6px;
+	
 }
+
 #qr-code{
   width: 250px;
   height: 250px;
+}
+
+.div-image-setas {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  align-items: center;
 }
