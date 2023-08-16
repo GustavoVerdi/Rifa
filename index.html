@@ -27,11 +27,13 @@
            <fieldset >
             <span id="Tituloprincipal">10  - PAINEL LIVRE ESCOLH </span>
         </fieldset>
-            <br>
-            <div id="galleryContainer">
-                <div class="arrow arrow-left" onclick="showPrevImage()">&#8249;</div>
-                <img src="imagem1.jpg" alt="Imagem 1" class="main-image" id="mainImage" onclick="openModal('imagem1.jpg')">
-                <div class="arrow arrow-right" onclick="showNextImage()">&#8250;</div>        
+           <div class="div-image-setas">
+                    <div class="arrow arrow-left" onclick="showPrevImage()">&#8249;</div>
+                    <div id="imagemdiv">
+                        <img src="imagem1.jpg" alt="Imagem 1" class="main-image" id="mainImage" onclick="openModal('imagem1.jpg')">
+                    </div>
+                    <div class="arrow arrow-right" onclick="showNextImage()">&#8250;</div>    
+                </div>
                 <BR>
                     <div>
                         <button id="botao-consulta" onclick="AbrirSubtelaConsulta()">Consultar Meus Números</button>
