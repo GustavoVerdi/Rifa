@@ -25,7 +25,7 @@
         <div id="container">
             <div id="barra-acoes">
            <fieldset >
-            <span id="Tituloprincipal">10  - PAINEL LIVRE ESCOLH </span>
+            <span id="Tituloprincipal">CHEVETTE OHC TURBO </span>
         </fieldset>
            <div class="div-image-setas">
                     <div class="arrow arrow-left" onclick="showPrevImage()">&#8249;</div>
@@ -73,9 +73,10 @@
     <div id="maisop">
         <button id="mais" onclick="atualizarQuantidade(10)">+10</button>
         <button id="mais" onclick="atualizarQuantidade(25)">+25</button>
-        <button id="mais" onclick="atualizarQuantidade(50)">+50</button>
+        <!--<button id="mais" onclick="atualizarQuantidade(50)">+50</button>-->
         <button id="mais" onclick="atualizarQuantidade(100)">+100</button>
-        <button id="mais" onclick="atualizarQuantidade(250)">+250</button>
+        <!--<button id="mais" onclick="atualizarQuantidade
+        (250)">+250</button> -->
         <button id="mais" onclick="atualizarQuantidade(500)">+500</button>
     </div>
         <br>
@@ -90,33 +91,29 @@
             <BR>
              <button id="botao-pagamento" onclick="abrirSubtela()">Realizar Compra</button>
         </div>
-      <div class="subtela" id="subtela">
-		<div class="subtela-conteudo">
-			<form action="rifa.php" method="POST">
-                <div>
-                    <label>CHECKOUT</label></div>
-               
-                <br>   
-                <div>
-                    <label for="numero">Informe seu Telefone:</label><br>
-                    <input oninput="verificarNumero()" type="text" id="numero" name="numero">
+        <div class="subtela" id="subtela">
+            <div class="subtela-conteudo">
+                <form action="rifa.php" method="POST">
+                    <div>
+                        <label>CHECKOUT</label>
+                    </div>
                     <br>
-                    <button type="button" onclick="realizarCheckout()">Finalizar Compra</button>
-                </div>   
-            <input type="submit" name="submit" id="subtmit" value="Continuar">
-
-            <div id="pix-instrucoes" style="display: none;">
-                <h2>Instruções de Pagamento via Pix</h2>
-                <p>Use a câmera do seu aplicativo bancário para escanear o QR Code abaixo:</p>
-                <img src="qrcode.jpg" id="qr-code" alt="QR Code Pix"  onclick="openModal('qrcode.jpg')">
-                <p>Após efetuar o pagamento, clique no botão abaixo para confirmar:</p>
-                <button type="button" onclick="confirmarPagamento()">Confirmar Pagamento</button>
+                    <div>
+                        <label for="numero">Informe seu Telefone:</label><br>
+                        <input oninput="verificarNumero()" type="text" id="numero" name="numero">
+                        <br>
+                        <button type="button" onclick="realizarCheckout()">Finalizar Compra</button>
+                    </div>
+                    <div id="pix-instrucoes" style="display: none;">
+                        <h2>Instruções de Pagamento via Pix</h2>
+                        <p>Use a câmera do seu aplicativo bancário para escanear o QR Code abaixo:</p>
+                        <img src="qrcode.jpg" id="qr-code" alt="QR Code Pix" onclick="openModal('qrcode.jpg')">
+                        <p>Após efetuar o pagamento, clique no botão abaixo para confirmar:</p>
+                        <button type="button" onclick="confirmarPagamento()">Confirmar Pagamento</button>
+                    </div>
+                </form>
+                <button id="botao-fechar-consulta" onclick="fecharSubtela()">Fechar</button>
             </div>
-            <br><br>
-			<button onclick="fecharSubtela()">Fechar</button>
-
-		</div>
-    </div>
-</div>
+        </div>
 </body>
 </html>
