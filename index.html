@@ -44,7 +44,8 @@
                             <div>
                             <label>Consulte suas Cotas</label></div>
                             <fieldset>
-                            <br>   
+                            <br>  
+                            <br> 
                             <div >
                                 <label for="telefoneConsulta">Número de Telefone:</label>
                                 <br>
@@ -108,6 +109,9 @@
                         <h2>Instruções de Pagamento via Pix</h2>
                         <p>Use a câmera do seu aplicativo bancário para escanear o QR Code abaixo:</p>
                         <img src="qrcode.jpg" id="qr-code" alt="QR Code Pix" onclick="openModal('qrcode.jpg')">
+                        <p>PIX Copia e Cola</p>
+                        <input type="text" value="Textoexemploteste" readonly="readonly" id="meuCampo">
+    <button onclick="copiarTexto()">Copiar</button>
                         <p>Após efetuar o pagamento, clique no botão abaixo para confirmar:</p>
                         <button type="button" onclick="confirmarPagamento()">Confirmar Pagamento</button>
                     </div>

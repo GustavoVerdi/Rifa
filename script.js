@@ -110,4 +110,14 @@
 backdrop.addEventListener("click", (event) => {
 	closeModal();
 });
-      
+function copiarTexto() {
+  var campoTexto = document.getElementById("meuCampo");
+  campoTexto.select();
+  
+  try {
+      navigator.clipboard.writeText(campoTexto.value);
+      alert("Texto copiado: " + campoTexto.value);
+  } catch (err) {
+      console.error("Erro ao copiar o texto: ", err);
+  }
+}
