@@ -289,12 +289,12 @@ display: none
   background-color: #1d9d34;
   color: rgb(248, 244, 244);
   border: 1px solid white;
-  padding: 4px 35px;
+  padding: 4px 5vw;
   text-align: left;
   text-decoration: none;
   display: inline-block;
   font-size: 17px;
-  margin: 4px 2px;
+  /*margin: 4px 2px;*/
   cursor: pointer;
   border-radius: 6px;
 }
