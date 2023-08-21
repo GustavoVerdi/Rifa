@@ -133,7 +133,6 @@ a:hover {
 #botao-pagamento , #botao-consulta{
   background-color: #1d9d34;
   color: rgb(248, 244, 244);
-  border: none;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
@@ -305,7 +304,6 @@ display: none
   font-size: 16px;
   padding: 4px 2px;
   margin: 1px 1px;
-  border: none;
   text-align: center;
   text-decoration: none;
   display: inline-block;
