@@ -125,7 +125,7 @@ a:hover {
 #barra-acoes {
   display: inline-block;
   justify-content: space-between;
-  width: 50%px;
+  width: 50%;
   margin-bottom: 10px;
   font-size: 28px;
 }
