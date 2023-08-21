@@ -141,7 +141,7 @@ a:hover {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 6px;
-  width: 50vw;
+  width: 100%;
 }
 #maisop{
   background-color: #fff;
