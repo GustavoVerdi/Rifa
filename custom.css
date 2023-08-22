@@ -248,8 +248,8 @@ display: none
 
 /* Estilo CSS para a imagem principal */
 .main-image {
-    width: 100vw; /* Largura fixa da imagem */
-   height: 100vw; /* Altura ajustada para preservar a proporção */
+    width: 80%; /* Largura fixa da imagem */
+   height: 80%; /* Altura ajustada para preservar a proporção */
     max-width:100%;
     align-items: center;
     object-fit: cover;
