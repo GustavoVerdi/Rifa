@@ -65,7 +65,7 @@ body {
   color: #000000;
 }
 #container {
-  width:min(100%,950px);
+  width:min(100%,850px);
   display: inline-block;
   color: #050505;
   flex-direction: column;
@@ -207,7 +207,6 @@ display: none
   color: #1a2a39;
   top: 50%;
   left: 50%;
-  width: 100%;
   transform: translate(-50%, -50%);
   background-color: #d6d6d6;
   padding: 20px;
