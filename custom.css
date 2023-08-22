@@ -65,11 +65,12 @@ body {
   color: #000000;
 }
 #container {
+  width:min(100%,950px);
   display: inline-block;
   color: #050505;
   flex-direction: column;
   border: 1px solid #1d9d34;
-  padding: 15px;
+  padding: 10px;
   background-color:rgb(255, 255, 255);
   border-radius: 10px;
   align-items: center;
