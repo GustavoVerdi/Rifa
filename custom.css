@@ -229,13 +229,13 @@ display: none
 }
 
 .arrow {
-    font-size: 70px;
+    font-size: 50px;
     cursor: pointer;
     border-radius: 50%;
-    display:inline-table;  
-    top: 50%;
-    transform: translateY(-50%);
-    align-items: start;
+    top: 0;
+  position: absolute;
+  color: #ffffff;
+  top: 45%;
 
 }
 .arrow-left {
@@ -248,14 +248,13 @@ display: none
 
 /* Estilo CSS para a imagem principal */
 .main-image {
-    width: 82%; /* Largura fixa da imagem */
-    height: 50%; /* Altura ajustada para preservar a proporção */
-    max-width: 500px;
-    max-height: 250px;
+    width: 100vw; /* Largura fixa da imagem */
+   height: 100vw; /* Altura ajustada para preservar a proporção */
+    max-width:100%;
     align-items: center;
     object-fit: cover;
     display: inline;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 * {
     font-family: 'Arimo', sans-serif;
@@ -292,13 +291,14 @@ display: none
   color: rgb(248, 244, 244);
   border: 1px solid white;
   padding: 4px 2vw;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 17px;
   /*margin: 4px 2px;*/
   cursor: pointer;
   border-radius: 6px;
+  width: 30%;
 }
 
 #quantidade{
@@ -310,6 +310,7 @@ display: none
   text-decoration: none;
   display: inline-block;
   border-radius: 6px;
+  width: 30%;
 	
 }
 
@@ -319,7 +320,6 @@ display: none
 }
 
 .div-image-setas {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  align-items: center;
+  position: relative;
+  text-align: center;
 }
