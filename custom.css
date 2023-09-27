@@ -35,7 +35,7 @@ body {
 
   border: 10px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: #494c4f;
 }
 #formlogin {
   padding: 100px;
@@ -65,7 +65,7 @@ body {
   color: #000000;
 }
 #container {
-  width:min(100%,850px);
+  width:min(100%,650px);
   display: inline-block;
   color: #050505;
   flex-direction: column;
@@ -200,7 +200,6 @@ display: none
   z-index: 999;
 }
 
-
 .subtela-conteudo,
 .inputuser,.subtela-conteudoconsulta {
   position: absolute;
@@ -248,16 +247,35 @@ display: none
 
 /* Estilo CSS para a imagem principal */
 .main-image {
-    width: 80%; /* Largura fixa da imagem */
-   height: 80%; /* Altura ajustada para preservar a proporção */
-    max-width:100%;
+    /*width: 80%; /* Largura fixa da imagem */
+   /*height: 80%; /* Altura ajustada para preservar a proporção */
+   /* max-width:100%;
     align-items: center;
     object-fit: cover;
     display: inline;
-    border-radius: 4px;
+    border-radius: 4px;*/
+     height: 350px; 
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 10px;
+    width: 450px;
+    text-align: center;
+    object-fit: cover;
 }
 * {
     font-family: 'Arimo', sans-serif;
+}
+.imagemdiv {
+  border: 2px solid #000000;
+  border-radius: 15px;
+  padding: 3px;
+  margin: 10px;
+  width: 400px;
+  text-align: center;
+  background-color: #ccc
+
+
 }
 
 
