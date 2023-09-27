@@ -65,7 +65,7 @@ body {
   color: #000000;
 }
 #container {
-  width:min(100%,650px);
+  width:min(100%,555px);
   display: inline-block;
   color: #050505;
   flex-direction: column;
