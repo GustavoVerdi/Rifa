@@ -146,10 +146,10 @@ a:hover {
 }
 #maisop{
   background-color: #fff;
-  border: 2px solid #1d9d34;;
+  border: 2px solid black;;
   border-radius: 12px;
-  padding: 1px;
-  width: 100%;
+  padding: 0px;
+  width: auto;
 }
 #mais{
 background-color: #1d9d34;
