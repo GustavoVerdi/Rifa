@@ -121,3 +121,37 @@ function copiarTexto() {
       console.error("Erro ao copiar o texto: ", err);
   }
 }
+
+function realizarCheckout() {
+  // Recupere o valor do campo de telefone
+  var telefone = document.getElementById("telefone").value;
+
+  // Crie uma instância do objeto XMLHttpRequest
+  var xhr = new XMLHttpRequest();
+
+  // Defina a função de retorno de chamada para manipular a resposta do servidor
+  xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          // Verifique a resposta do servidor
+          var response = xhr.responseText;
+          if (response === "cadastro_existente") {
+              // O telefone já está cadastrado, você pode atualizar os campos de nome e e-mail se necessário
+              document.getElementById("nome_completo").readOnly = true;
+              document.getElementById("email").readOnly = true;
+          } else {
+              // O telefone não está cadastrado, permita ao usuário preencher nome e e-mail
+              document.getElementById("nome_completo").readOnly = false;
+              document.getElementById("email").readOnly = false;
+          }
+      }
+  };
+
+  // Abra uma solicitação POST para verificar_cadastro.php (ou outra URL correspondente)
+  xhr.open('POST', 'verificar_cadastro.php', true);
+
+  // Defina o cabeçalho da solicitação
+  xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+  // Envie a solicitação com os dados do telefone
+  xhr.send('telefone=' + telefone);
+}
