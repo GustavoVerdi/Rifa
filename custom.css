@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
 @media only screen and (min-width: 960px) {
   /* styles for browsers larger than 960px; */
 }
@@ -30,9 +31,8 @@
 }
 
 body {
+  justify-content: center;
   align-items: center;
-  margin: 0px;
-
   border: 10px;
   text-align: center;
   background-color: #494c4f;
@@ -65,8 +65,6 @@ body {
   color: #000000;
 }
 #container {
-  width:min(100%,600px);
-  display: inline-block;
   color: #050505;
   flex-direction: column;
   border-radius: 5px solid #1d9d34;
@@ -85,6 +83,7 @@ body {
   display: flex;
   justify-content: center;
   writing-mode: horizontal-tb;
+  margin: 0px;
 }
 
 .ulcabecalho {
@@ -123,8 +122,8 @@ a:hover {
 }
 
 #barra-acoes {
-  display: inline-block;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   /*width: 50%;*/
   margin-bottom: 10px;
   font-size: 28px;
@@ -148,9 +147,11 @@ a:hover {
   border: 2px solid black;;
   border-radius: 12px;
   padding: 0px;
-  width: auto;
+  width: 250px;
+  display: inline-block;
+  margin: 5px;
 }
-#mais{
+#mais{ /* BOTÃO + COTA*/
 background-color: #1d9d34;
 color: white;
 width: 110px;
@@ -160,9 +161,8 @@ border: 1px solid white;
 padding: 5px;
 width: 44%;
 border-radius: 6px;
-  
-
 }
+
 label {
   font-weight: bold;
   margin-right: 10px;
@@ -172,13 +172,8 @@ input[type="number"] {
   width: 50px;
 }
 
-#numerosGerados, #numerosocultar{
-display: none
-}
-
 #valorTotal {
   font-weight: bold;
-
 }
 #valortotaldiv {
   background-color: #fff;
@@ -197,6 +192,7 @@ display: none
   height: 100%;
   background-color: rgba(40, 29, 29, 0.5);
   z-index: 999;
+  border-radius: 2px solid black;
 }
 
 .subtela-conteudo,
@@ -226,7 +222,7 @@ display: none
     position: relative; 
 }
 
-.arrow {
+.arrow { /*Flecha foto*/
     font-size: 50px;
     cursor: pointer;
     border-radius: 50%;
@@ -236,11 +232,11 @@ display: none
   top: 45%;
 
 }
-.arrow-left {
+.arrow-left { /*Flecha Esquerda*/
     left: 10px;
 }
 
-.arrow-right {
+.arrow-right { /*Flecha Direita*/
     right: 10px;
 }
 
@@ -257,11 +253,12 @@ display: none
     border: 2px solid #000000;
     border-radius: 15px;
     /*padding: 3px;*/
-    width: 400px;
+    width: 100%;
     text-align: center;
     object-fit: cover;
+    display: inline-block;
 }
-* {
+* { /*Fonte Princ*/
     font-family: 'Arimo', sans-serif;
 }
 .imagemdiv {
@@ -275,7 +272,6 @@ display: none
 
 
 }
-
 
 #subtmit,
 #subtmitConsulta{
@@ -338,4 +334,23 @@ display: none
 .div-image-setas {
   position: relative;
   text-align: center;
+}
+
+.copcola{
+  width: auto;
+  height: 22px;
+}
+
+#containerpagamento{
+  width:min(100%,350px);
+  display: inline-block;
+  color: #050505;
+  flex-direction: column;
+  border-radius: 5px solid #1d9d34;
+  padding: 10px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 10px;
+  align-items: center;
+  object-fit: cover;
+  overflow:visible; 
 }

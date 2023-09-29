@@ -88,7 +88,7 @@
             <p id="mensagemErro" style="color: red; font-weight: bold;"></p>
         </div>
         <div id="valortotaldiv">
-            <label>Valor Total R$<span id="valorTotal">0.49</span></label>
+            <label>Valor Total R$<span id="valorTotal"> 0.49</span></label>
         </div>
         <div>
             <BR>
@@ -96,7 +96,8 @@
         </div>
         <div class="subtela" id="subtela">
             <div class="subtela-conteudo">
-                <form action="rifa.php" method="POST">
+              <!--  <form action="rifa.php" method="POST"> -->
+                <form action="pagamento.html" method="POST">
                     <div>
                         <label>CHECKOUT</label>
                         <br><br>
@@ -104,7 +105,8 @@
                     <div>
                         <label for="telefone">Telefone:</label>
                         <br>
-                        <input type="text" id="telefone" name="telefone" required placeholder="(99)99999-9999" onblur="verificarCadastro()">
+                        <input type="text" id="telefone" name="telefone" required placeholder="(99)99999-9999"
+                            onblur="verificarCadastro()">
                         <br><br>
                         <label for="nome_completo">Nome Completo:</label>
                         <input type="text" id="nome_completo" name="nome_completo" class="inputUser" readonly required>
@@ -118,13 +120,13 @@
                     <br><br>
                     <input type="submit" name="submit" id="submit" value="Efetuar Compra" href="pagamento.html">
                     <br>
-                    <button type="button" onclick="realizarCheckout()">Continuar Compra</button>
+                    <button type="button" onclick="realizarCheckout()" href="">Continuar Compra</button>
                     <button onclick="fecharSubtela()">Fechar</button>
                 </form>
-                
 
+
+            </div>
         </div>
-    </div>
 </body>
 
 </html>
