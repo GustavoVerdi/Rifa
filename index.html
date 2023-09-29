@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div class="loader"></div>
     <nav class="cabecalho_menu" style="width:100%;">
         <ul class="ulcabecalho" colspan="3">
             <li><a class="cabecalho_menu_item" href="index.html">Início</a></li>
@@ -22,14 +23,12 @@
     <br>
     <div id="container">
         <div id="barra-acoes">
-            <fieldset>
-                <span id="Tituloprincipal">teste</span>
-            </fieldset>
+                <span id="Tituloprincipal">TESTE</span>
             <br>
             <div class="div-image-setas">
                 <div class="arrow arrow-left" onclick="showPrevImage()">&#8249;</div>
-                <div id="imagemdiv">
-                    <img src="./imagem/imagem1.jpg" alt="Imagem 1" class="main-image" id="mainImage"
+                <div  id="imagemdiv">
+                    <img  src="./imagem/imagem1.jpg" alt="Imagem 1" class="main-image" id="mainImage"
                         onclick="openModal('imagem1.jpg')">
                 </div>
                 <div class="arrow arrow-right" onclick="showNextImage()">&#8250;</div>
@@ -59,8 +58,10 @@
             </diV>
         </div>
         <br>
-        <div id="valorUnitarioContainer">
-            <label for="valorUnitario" id="valorUnitarioLabel" min="1" max="100">POR APENAS R$ <span
+        <!-- <div id="valorUnitarioContainer"
+            NOVA DIV> -->
+            <div>
+            <label class="btn" for="valorUnitario" id="valorUnitarioLabel" min="1" max="100">POR APENAS R$ <span class="ribbon">NOVO</span><span
                     id="valorUnitario">0.49</span></label>
         </div><br>
         <label for="quantidade" id="quantityLabel">COTAS:</label> <br>
@@ -109,6 +110,7 @@
                             onblur="verificarCadastro()">
                         <br><br>
                         <label for="nome_completo">Nome Completo:</label>
+                        <br>
                         <input type="text" id="nome_completo" name="nome_completo" class="inputUser" readonly required>
                     </div>
                     <br>
@@ -117,14 +119,13 @@
                         <br>
                         <input type="email" id="email" name="email" class="inputUser" readonly required>
                     </div>
-                    <br><br>
+                    <br>
                     <input type="submit" name="submit" id="submit" value="Efetuar Compra" href="pagamento.html">
                     <br>
                     <button type="button" onclick="realizarCheckout()" href="">Continuar Compra</button>
+                    <br>
                     <button onclick="fecharSubtela()">Fechar</button>
                 </form>
-
-
             </div>
         </div>
 </body>
